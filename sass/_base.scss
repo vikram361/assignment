@@ -1,0 +1,65 @@
+:root {
+  --color-primary: #7ed56f;
+  --color-primary-light: #55c57a;
+  --color-primary-dark: #28b485;
+
+  --color-secondary-light: #ffb900;
+  --color-secondary-dark: #ff7730;
+
+  --color-blue-dark: #1e3c72;
+  --color-blue-light: #019ca9;
+
+  --color-pink-light: #ff9068;
+  --color-pink-dark: #fd746c;
+
+  --color-black: black;
+  --color-primary-green: #55efc4;
+  --color-white: #fff;
+  --color-primary-gray1: #f7f7f7;
+  --color-primary-gray2: #eee;
+  --color-primary-gray3: #999;
+  --color-primary-gray4: #333;
+  --color-primary-gradient1: #00c9ff;
+  --color-primary-gradient2: #92fe9d;
+  --color-primary-blue: #283e51;
+  --color-primary-blue-light: #4b79a1;
+
+  --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+  --shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.06);
+
+  --line: 1px solid var(--color-grey-light-2);
+}
+
+$bp-largest: 75em; // 1200px
+$bp-large: 68.75em; // 1100px
+$bp-medium: 56.25em; // 900px
+$bp-small: 37.5em; // 600px
+$bp-smallest: 31.25em; // 500px
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 1rem = 10px, 10px/16px = 62.5%
+
+  @media only screen and (max-width: $bp-large) {
+    font-size: 50%;
+  }
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+
+  min-height: 100vh;
+}
